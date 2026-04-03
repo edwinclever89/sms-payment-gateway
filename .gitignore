@@ -1,0 +1,23 @@
+# ── Termux / Node.js ────────────────────────────────────────────────────────
+termux/node_modules/
+termux/last_processed.txt
+termux/sms-listener.log
+termux/*.log
+
+# ── Laravel ──────────────────────────────────────────────────────────────────
+laravel/.env
+laravel/vendor/
+laravel/storage/logs/
+laravel/storage/framework/cache/
+laravel/storage/framework/sessions/
+laravel/storage/framework/views/
+laravel/bootstrap/cache/
+laravel/database/database.sqlite
+laravel/public/hot
+laravel/public/storage
+
+# ── General ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

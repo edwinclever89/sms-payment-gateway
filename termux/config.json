@@ -1,0 +1,23 @@
+{
+  "laravel": {
+    "url": "http://127.0.0.1:8000",
+    "endpoint": "/api/payment/verify",
+    "api_token": "your-secret-api-token-here",
+    "timeout_ms": 10000
+  },
+  "sms": {
+    "poll_interval_ms": 5000,
+    "last_processed_file": "./last_processed.txt",
+    "regex": {
+      "amount": "TSh\\s+([\\d,]+)",
+      "sender_name": "kutoka kwa Wakala - ([A-Z ]+),",
+      "new_balance": "Salio lako jipya ni TSh ([\\d,]+)",
+      "transaction_id": "Kumbukumbu no\\.:\\s+(\\d+)",
+      "timestamp": "(\\d{2}/\\d{2}/\\d{2}\\s+\\d{2}:\\d{2})"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "./sms-listener.log"
+  }
+}
